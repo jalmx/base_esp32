@@ -7238,6 +7238,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 55.88) (xy 25.4 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f49077c-8016-42e7-8ac0-b3416ff9e7a4")
+	)
+	(wire
+		(pts
 			(xy 132.08 20.32) (xy 132.08 24.13)
 		)
 		(stroke
@@ -8598,6 +8608,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 52.07) (xy 22.86 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfc6c501-6e1f-43be-baa4-57fb3c477f7a")
+	)
+	(wire
+		(pts
 			(xy 156.21 69.85) (xy 166.37 69.85)
 		)
 		(stroke
@@ -8605,6 +8625,16 @@
 			(type default)
 		)
 		(uuid "d11724d0-55a3-4c82-9123-0aebe2020b28")
+	)
+	(wire
+		(pts
+			(xy 21.59 52.07) (xy 22.86 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1876969-6948-4698-b577-300c515b9f28")
 	)
 	(wire
 		(pts
@@ -8815,6 +8845,16 @@
 			(type default)
 		)
 		(uuid "e3d949dd-b416-4800-9120-259e4fdd9d97")
+	)
+	(wire
+		(pts
+			(xy 21.59 49.53) (xy 25.4 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e432a273-418d-47ff-af5e-abafd3299e41")
 	)
 	(wire
 		(pts
@@ -16426,6 +16466,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 16.51 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2055071-eaba-45ed-917d-2dbeba6f3bc8")
+		(property "Reference" "J31"
+			(at 17.145 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "bypass"
+			(at 19.05 46.228 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 16.51 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a82b16b-5956-467d-aa7b-d0cc484d90c7")
+		)
+		(pin "2"
+			(uuid "4a1cb9c3-e633-431e-a3f4-7fe13aa6a72d")
+		)
+		(instances
+			(project ""
+				(path "/21b771cb-d347-44fd-932f-803ba77af901"
+					(reference "J31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_SPDT")
 		(at 156.21 167.64 180)
 		(unit 1)
@@ -16491,6 +16599,72 @@
 			(project ""
 				(path "/21b771cb-d347-44fd-932f-803ba77af901"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 25.4 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d94bf479-d7ab-4fab-a671-c5f72377e3d5")
+		(property "Reference" "#PWR039"
+			(at 25.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 25.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 25.4 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7cd8ef1-bd60-41ea-9f54-e1410459961a")
+		)
+		(instances
+			(project "base_esp32"
+				(path "/21b771cb-d347-44fd-932f-803ba77af901"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -16735,6 +16909,72 @@
 			(project ""
 				(path "/21b771cb-d347-44fd-932f-803ba77af901"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 25.4 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e03283ea-4c47-4ad8-9a3c-3a13f31b5283")
+		(property "Reference" "#PWR038"
+			(at 25.4 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 25.4 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 25.4 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f7e3b50-56b3-4477-ac45-96f66ccfcf70")
+		)
+		(instances
+			(project "base_esp32"
+				(path "/21b771cb-d347-44fd-932f-803ba77af901"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
