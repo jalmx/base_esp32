@@ -10434,7 +10434,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 158.75 137.16 0)
 			(effects
 				(font
@@ -10567,7 +10567,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 146.05 26.67 0)
 			(effects
 				(font
@@ -10709,7 +10709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical"
 			(at 163.83 26.67 0)
 			(effects
 				(font
@@ -11119,7 +11119,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
 			(at 240.03 118.11 0)
 			(effects
 				(font
@@ -11392,7 +11392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 25.4 162.56 0)
 			(effects
 				(font
@@ -11525,7 +11525,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 45.72 175.26 0)
 			(effects
 				(font
@@ -11660,7 +11660,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 153.67 125.73 0)
 			(effects
 				(font
@@ -11734,7 +11734,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 170.18 26.67 0)
 			(effects
 				(font
@@ -11878,7 +11878,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm"
 			(at 129.54 62.23 0)
 			(effects
 				(font
@@ -11989,7 +11989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical"
 			(at 187.96 26.67 0)
 			(effects
 				(font
@@ -12131,7 +12131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 25.4 170.18 0)
 			(effects
 				(font
@@ -12271,7 +12271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 132.08 118.11 0)
 			(effects
 				(font
@@ -12611,7 +12611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 69.85 189.23 0)
 			(effects
 				(font
@@ -12810,7 +12810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 45.72 167.64 0)
 			(effects
 				(font
@@ -13013,7 +13013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 69.85 180.34 0)
 			(effects
 				(font
@@ -13479,7 +13479,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm"
 			(at 97.79 129.54 0)
 			(effects
 				(font
@@ -13564,7 +13564,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 45.72 160.02 0)
 			(effects
 				(font
@@ -13705,7 +13705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical"
 			(at 140.97 26.67 0)
 			(effects
 				(font
@@ -13781,7 +13781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 69.85 153.67 0)
 			(effects
 				(font
@@ -13986,7 +13986,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 154.94 78.74 0)
 			(effects
 				(font
@@ -14126,7 +14126,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 100.33 26.67 0)
 			(effects
 				(font
@@ -14200,7 +14200,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
 			(at 123.19 26.67 0)
 			(effects
 				(font
@@ -14343,7 +14343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 132.08 134.62 0)
 			(effects
 				(font
@@ -14542,7 +14542,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 29.21 111.76 0)
 			(effects
 				(font
@@ -15023,7 +15023,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 153.67 114.3 0)
 			(effects
 				(font
@@ -15093,7 +15093,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal"
 			(at 91.44 163.83 0)
 			(effects
 				(font
@@ -15165,7 +15165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x08_P1.27mm_Vertical"
 			(at 171.45 59.69 0)
 			(effects
 				(font
@@ -15250,7 +15250,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 45.72 190.5 0)
 			(effects
 				(font
@@ -15453,7 +15453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 25.4 154.94 0)
 			(effects
 				(font
@@ -15523,7 +15523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical"
 			(at 171.45 125.73 0)
 			(effects
 				(font
@@ -15597,7 +15597,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 			(at 19.05 27.94 0)
 			(effects
 				(font
@@ -15667,7 +15667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 25.4 185.42 0)
 			(effects
 				(font
@@ -15734,7 +15734,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
 			(at 151.13 59.69 0)
 			(effects
 				(font
@@ -15822,7 +15822,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 69.85 171.45 0)
 			(effects
 				(font
@@ -16096,7 +16096,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 129.54 78.74 0)
 			(effects
 				(font
@@ -16172,7 +16172,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal"
 			(at 91.44 186.69 0)
 			(effects
 				(font
@@ -16373,7 +16373,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 45.72 182.88 0)
 			(effects
 				(font
@@ -16443,7 +16443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 132.08 110.49 0)
 			(effects
 				(font
@@ -16511,7 +16511,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 16.51 49.53 0)
 			(effects
 				(font
@@ -16579,7 +16579,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 			(at 156.21 167.64 0)
 			(effects
 				(font
@@ -17359,7 +17359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical"
 			(at 171.45 114.3 0)
 			(effects
 				(font
@@ -17429,7 +17429,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 25.4 177.8 0)
 			(effects
 				(font
@@ -17499,7 +17499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 132.08 125.73 0)
 			(effects
 				(font
@@ -17567,7 +17567,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_Slide-03_Wuerth-WS-SLTV_10x2.5x6.4_P2.54mm"
 			(at 156.21 185.42 0)
 			(effects
 				(font
@@ -17639,7 +17639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_1x04_P1.27mm_Vertical"
 			(at 118.11 26.67 0)
 			(effects
 				(font
@@ -17714,7 +17714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 29.21 125.73 0)
 			(effects
 				(font
@@ -17860,7 +17860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
 			(at 69.85 162.56 0)
 			(effects
 				(font
