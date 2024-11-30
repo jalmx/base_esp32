@@ -17293,7 +17293,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "db56a4df-d105-46eb-b96a-84080e0d62d3")
 		(property "Reference" "#PWR040"
 			(at 208.28 116.84 0)
@@ -17304,12 +17303,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 208.28 107.95 0)
+		(property "Value" "VPP"
+			(at 206.502 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
