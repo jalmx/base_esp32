@@ -11628,7 +11628,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BYPASS_SRC_3V3"
+		(property "Value" "BYPASS SRC 3V3"
 			(at 24.13 93.98 90)
 			(effects
 				(font
@@ -13388,7 +13388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "BYPASS_SRC_5V"
+		(property "Value" "BYPASS SRC 5V"
 			(at 22.86 48.26 90)
 			(effects
 				(font
@@ -16077,7 +16077,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED EXT"
 			(at 187.96 128.27 0)
 			(effects
 				(font
@@ -17530,7 +17530,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "LED BOARD"
 			(at 205.74 128.27 0)
 			(effects
 				(font
@@ -17736,7 +17736,7 @@
 				)
 			)
 		)
-		(property "Value" "Selector_Input"
+		(property "Value" "Selector Input 1"
 			(at 156.21 161.29 0)
 			(effects
 				(font
@@ -18856,7 +18856,7 @@
 				)
 			)
 		)
-		(property "Value" "Selector_Input"
+		(property "Value" "Selector Input 2"
 			(at 156.21 179.07 0)
 			(effects
 				(font
