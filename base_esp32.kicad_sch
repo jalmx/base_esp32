@@ -17196,7 +17196,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "POT_1"
+		(property "Value" "POT_2"
 			(at 88.9 187.9599 0)
 			(effects
 				(font
@@ -17205,7 +17205,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alps_RK163_Single_Horizontal"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-10-V05_Vertical"
 			(at 91.44 186.69 0)
 			(effects
 				(font
