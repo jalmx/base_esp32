@@ -7522,7 +7522,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 138.43) (xy 245.11 138.43)
+			(xy 241.3 134.62) (xy 245.11 134.62)
 		)
 		(stroke
 			(width 0)
@@ -9782,7 +9782,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 146.05) (xy 245.11 146.05)
+			(xy 241.3 142.24) (xy 245.11 142.24)
 		)
 		(stroke
 			(width 0)
@@ -10242,7 +10242,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 143.51) (xy 245.11 143.51)
+			(xy 241.3 139.7) (xy 245.11 139.7)
 		)
 		(stroke
 			(width 0)
@@ -10452,7 +10452,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 140.97) (xy 245.11 140.97)
+			(xy 241.3 137.16) (xy 245.11 137.16)
 		)
 		(stroke
 			(width 0)
@@ -11142,7 +11142,7 @@
 		(uuid "19f5fa14-d14a-4094-8949-656133924c1a")
 	)
 	(label "M1A"
-		(at 241.3 138.43 0)
+		(at 241.3 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11219,7 +11219,7 @@
 		(uuid "2a35f454-d810-4614-ad50-54f9bccfe6eb")
 	)
 	(label "M1B"
-		(at 241.3 140.97 0)
+		(at 241.3 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11439,7 +11439,7 @@
 		(uuid "61066fe9-2d87-495c-83a9-29e3dfae1df8")
 	)
 	(label "M2B"
-		(at 241.3 146.05 0)
+		(at 241.3 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11890,7 +11890,7 @@
 		(uuid "c8492cc4-8a9b-4dd4-80d2-f67c8aff891c")
 	)
 	(label "M2A"
-		(at 241.3 143.51 0)
+		(at 241.3 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -21231,7 +21231,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7747d83-301c-4304-af38-fec44be68595")
 		(property "Reference" "#PWR051"
 			(at 237.49 156.21 0)
@@ -21243,7 +21242,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 237.49 147.32 0)
+			(at 237.49 148.336 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21854,7 +21853,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 250.19 140.97 0)
+		(at 250.19 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21862,7 +21861,7 @@
 		(dnp no)
 		(uuid "d66636f2-f6a0-4156-b44c-a72383efa06d")
 		(property "Reference" "J34"
-			(at 242.062 132.842 0)
+			(at 234.188 136.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21871,7 +21870,7 @@
 			)
 		)
 		(property "Value" "MOTOR"
-			(at 242.062 135.382 0)
+			(at 234.188 138.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21880,7 +21879,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 250.19 140.97 0)
+			(at 250.19 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21889,7 +21888,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 250.19 140.97 0)
+			(at 250.19 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21898,7 +21897,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 250.19 140.97 0)
+			(at 250.19 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -4,16 +4,18 @@
 
 This board is a base to connect different components to test. Make easy life
 
-![schematic](base_esp32.png)
+![schematic](schematic/base_esp32.png)
 
 ## Footprint
 
-![footprint](base_esp32-Edge_Cuts.png)
+![footprint](router/base_esp32-Edge_Cuts.png)
 
 ## 3D
 
-![3d](base_esp32_1.png)
+![3d](3D/base_esp32_top.png)
 
-![3d](base_esp32_2.png)
+![3d](3D/base_esp32_botton.png)
 
-![3d](base_esp32_3.png)
+![3d](3D/base_esp32_l.png)
+
+![3d](3D/base_esp32_r.png)
