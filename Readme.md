@@ -6,7 +6,7 @@ This board is a base to connect different components to test. Make easy life
 
 ![schematic](schematic/base_esp32.png)
 
-## Footprint
+## Front Silkscreen
 
 ![footprint](router/base_esp32-Edge_Cuts.png)
 
@@ -19,3 +19,9 @@ This board is a base to connect different components to test. Make easy life
 ![3d](3D/base_esp32_l.png)
 
 ![3d](3D/base_esp32_r.png)
+
+## Ray
+
+![3d](3D/base_esp32_top_ray.png)
+
+![3d](3D/base_esp32_botton_ray.png)

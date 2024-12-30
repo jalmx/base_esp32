@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "my_symbols")(type "KiCad")(uri "${KIPRJMOD}/logo_footprint/my_symbols.pretty")(options "")(descr ""))
+)

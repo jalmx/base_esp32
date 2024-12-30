@@ -58,7 +58,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|199639000|73587000|0d88efa5-b522-4ac9-b4f9-22de6351fe40|00000000-0000-0000-0000-000000000000",
+        "silk_edge_clearance|203000000|129810000|1dc6d22a-27ca-41bd-8d0d-50cb9b12501f|03eec430-d6de-41a1-9a51-eac3c66ad8e6",
+        "silk_edge_clearance|203000000|137050000|1dc6d22a-27ca-41bd-8d0d-50cb9b12501f|5b035c84-e897-47c7-9eeb-d5124f518f9d"
+      ],
       "meta": {
         "version": 2
       },
@@ -125,7 +129,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
+        "min_text_height": 0.5,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.16,
@@ -495,8 +499,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "router/",
-      "pos_files": "",
+      "plot": "gerber/",
+      "pos_files": "gerber/",
       "specctra_dsn": "",
       "step": "step/base_esp32.step",
       "svg": "pcb/",
@@ -567,7 +571,13 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": true
         }
       ],
       "filter_string": "",
