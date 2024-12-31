@@ -38005,6 +38005,30 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 126.1364 60.5028 -0)
+		(layer "B.SilkS")
+		(uuid "c0d82dbe-5c8f-4269-b35b-a5d3841391b7")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "KEYPAD"
+		(at 120.8024 145.517 -90)
+		(layer "B.SilkS")
+		(uuid "c0eb751e-b469-4a83-98c2-d33d164f77f2")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
 	(gr_text "DATA"
 		(at 183.24081 95.8342 -0)
 		(layer "B.SilkS")
@@ -38427,7 +38451,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "KEYBOARD"
+	(gr_text "KEYPAD"
 		(at 120.8682 145.517 90)
 		(layer "F.SilkS")
 		(uuid "29f303ea-049c-4290-92d8-6a25fdb9b066")
