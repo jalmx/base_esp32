@@ -1,4 +1,4 @@
-# Base for ESP32 for DevKit V4
+# Base for ESP32 for DevKit V1
 
 ## Schematic
 
