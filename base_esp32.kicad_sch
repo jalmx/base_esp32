@@ -5,7 +5,7 @@
 	(uuid "21b771cb-d347-44fd-932f-803ba77af901")
 	(paper "A4")
 	(title_block
-		(title "Base for ESP32")
+		(title "Base for ESP32 DevKit V4")
 		(date "2024-11-27")
 		(rev "0.1")
 		(company "Xizuth")
@@ -9811,6 +9811,16 @@
 		)
 		(uuid "b5b4dd47-31de-4dae-9712-8d3ab9656a98")
 	)
+	(polyline
+		(pts
+			(xy 265.35 161.29) (xy 265.35 161.29)
+		)
+		(stroke
+			(width -0.0001)
+			(type solid)
+		)
+		(uuid "b614486e-276c-44d3-bba4-86c7aaeaced2")
+	)
 	(wire
 		(pts
 			(xy 273.05 22.86) (xy 278.13 22.86)
@@ -10786,20 +10796,6 @@
 			(type none)
 		)
 		(uuid 9aaec233-510a-4999-8ad8-ec56e9f556f5)
-	)
-	(polyline
-		(pts
-			(xy 265.35 161.29) (xy 265.35 161.29)
-		)
-		(stroke
-			(width -0.0001)
-			(type solid)
-		)
-		(fill
-			(type color)
-			(color 26 26 26 1)
-		)
-		(uuid b614486e-276c-44d3-bba4-86c7aaeaced2)
 	)
 	(polyline
 		(pts

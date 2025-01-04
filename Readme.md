@@ -1,4 +1,4 @@
-# Base for ESP32
+# Base for ESP32 for DevKit V4
 
 ## Schematic
 
@@ -6,9 +6,11 @@ This board is a base to connect different components to test. Make easy life
 
 ![schematic](schematic/base_esp32.png)
 
-## Front Silkscreen
+## Silkscreen
 
-![footprint](router/base_esp32-Edge_Cuts.png)
+![footprint](pcb/base_esp32-F_Silkscreen.png)
+
+![footprint](pcb/base_esp32-B_Silkscreen.png)
 
 ## 3D
 

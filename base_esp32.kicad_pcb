@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Base ESP32")
+		(title "Base for ESP32 DevKit V4")
 		(date "2024-12-16")
 		(rev "v0.1")
 		(company "Xiztuh Inc")
@@ -117,11 +117,11 @@
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk yes)
-			(outputformat 1)
+			(outputformat 4)
 			(mirror no)
-			(drillshape 0)
+			(drillshape 2)
 			(scaleselection 1)
-			(outputdirectory "gerber/")
+			(outputdirectory "pcb/")
 		)
 	)
 	(net 0 "")
@@ -19578,6 +19578,7 @@
 		(property "Value" "ESP32-DevKitC"
 			(at 13.0302 -6.30936 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "b6a41b8f-1d13-45a1-80ca-b9421b97a316")
 			(effects
 				(font
@@ -37437,6 +37438,18 @@
 			(justify right bottom mirror)
 		)
 	)
+	(gr_text "DevKitV4"
+		(at 154.9908 105.5116 -0)
+		(layer "B.SilkS")
+		(uuid "36dbe550-9c71-44d5-b48e-e10201a07773")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "5V\nESP32"
 		(at 116.7384 101.2952 0)
 		(layer "B.SilkS")
@@ -37968,7 +37981,7 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "IO00 -> BOOT\nIO01 -> TX\nIO02 -> DTH11 M2B\nIO03 -> RX\nIO04 -> -\nIO05 -> -\nIO06 -> X\nIO07 -> X\nIO08 -> X\nIO09 -> X\nIO10 -> X\nIO11 -> X\nIO12 -> K2 ECHO\nIO13 -> K1 TRIGGER\nIO14 -> K3 SERVO\nIO15 -> DS18B M1B\nIO16 -> K5\nIO17 -> K6\nIO18 -> -\nIO19 -> -\nIO20 -> X\nIO21 -> -\nIO22 -> -\nIO23 -> -\nIO24 -> X\nIO25 -> K7\nIO26 -> K8\nIO27 -> K4\nIO28 -> X\nIO29 -> X\nIO30 -> X\nIO31 -> X\nIO32 -> BUZZER M2A\nIO33 -> M1A\nIO34 -> POT_1/LDR\nIO35 -> POT_2/LM35\nIO36 -> -\nIO37 -> X\nIO38 -> X\nIO39 -> -"
+	(gr_text "IO00 -> BOOT\nIO01 -> TX\nIO02 -> DTH11 M2B\nIO03 -> RX\nIO04 -> -\nIO05 -> -\nIO06 -> X\nIO07 -> X\nIO08 -> X\nIO09 -> X\nIO10 -> X\nIO11 -> X\nIO12 -> K2 ECHO\nIO13 -> K1 TRIGGER\nIO14 -> K3 SERVO\nIO15 -> DS18B M1B\nIO16 -> K5\nIO17 -> K6\nIO18 -> -\nIO19 -> -\nIO20 -> X\nIO21 -> -\nIO22 -> -\nIO23 -> -\nIO24 -> X\nIO25 -> K7\nIO26 -> K8\nIO27 -> K4\nIO28 -> X\nIO29 -> X\nIO30 -> X\nIO31 -> X\nIO32 -> BUZZER M2A\nIO33 -> M1A\nIO34 -> POT_1/LDR\nIO35 -> POT_2/LM35\nIO36 -> DI VP\nIO37 -> X\nIO38 -> X\nIO39 -> DI VN"
 		(at 159.1564 103.378 0)
 		(layer "B.SilkS")
 		(uuid "b36c3597-5d93-4a0d-aa18-575c96ad4a4d")
@@ -38234,7 +38247,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "IO00 -> BOOT\nIO01 -> TX\nIO02 -> DTH11 M2B\nIO03 -> RX\nIO04 -> -\nIO05 -> -\nIO06 -> X\nIO07 -> X\nIO08 -> X\nIO09 -> X\nIO10 -> X\nIO11 -> X\nIO12 -> K2 ECHO\nIO13 -> K1 TRIGGER\nIO14 -> K3 SERVO\nIO15 -> DS18B M1B\nIO16 -> K5\nIO17 -> K6\nIO18 -> -\nIO19 -> -\nIO20 -> X\nIO21 -> -\nIO22 -> -\nIO23 -> -\nIO24 -> X\nIO25 -> K7\nIO26 -> K8\nIO27 -> K4\nIO28 -> X\nIO29 -> X\nIO30 -> X\nIO31 -> X\nIO32 -> BUZZER M2A\nIO33 -> M1A\nIO34 -> POT_1/LDR\nIO35 -> POT_2/LM35\nIO36 -> -\nIO37 -> X\nIO38 -> X\nIO39 -> -"
+	(gr_text "IO00 -> BOOT\nIO01 -> TX\nIO02 -> DTH11 M2B\nIO03 -> RX\nIO04 -> -\nIO05 -> -\nIO06 -> X\nIO07 -> X\nIO08 -> X\nIO09 -> X\nIO10 -> X\nIO11 -> X\nIO12 -> K2 ECHO\nIO13 -> K1 TRIGGER\nIO14 -> K3 SERVO\nIO15 -> DS18B M1B\nIO16 -> K5\nIO17 -> K6\nIO18 -> -\nIO19 -> -\nIO20 -> X\nIO21 -> -\nIO22 -> -\nIO23 -> -\nIO24 -> X\nIO25 -> K7\nIO26 -> K8\nIO27 -> K4\nIO28 -> X\nIO29 -> X\nIO30 -> X\nIO31 -> X\nIO32 -> BUZZER M2A\nIO33 -> M1A\nIO34 -> POT_1/LDR\nIO35 -> POT_2/LM35\nIO36 -> DI VP\nIO37 -> X\nIO38 -> X\nIO39 -> DI VN"
 		(at 143.3068 103.378 0)
 		(layer "F.SilkS")
 		(uuid "008e8bfd-add1-49a8-b9e1-d15a9f57cc88")
@@ -39318,6 +39331,18 @@
 		(effects
 			(font
 				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DevKitV4"
+		(at 148.3868 105.5116 0)
+		(layer "F.SilkS")
+		(uuid "ea3bef58-e162-4fec-a1d9-d7204caa8a0c")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.1)
 			)
 			(justify left bottom)
