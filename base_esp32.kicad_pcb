@@ -88,7 +88,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
 			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(plot_on_all_layers_selection 0x0001000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes no)
@@ -117,11 +117,11 @@
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(subtractmaskfromsilk yes)
-			(outputformat 1)
+			(outputformat 4)
 			(mirror no)
-			(drillshape 0)
+			(drillshape 2)
 			(scaleselection 1)
-			(outputdirectory "gerber/")
+			(outputdirectory "pcb/")
 		)
 	)
 	(net 0 "")
@@ -35338,18 +35338,6 @@
 			(justify right bottom mirror)
 		)
 	)
-	(gr_text "BOOT"
-		(at 118.364 55.499 -0)
-		(layer "B.SilkS")
-		(uuid "0e446df3-9d5c-4f31-8170-cf4a182953cb")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
-			)
-			(justify left bottom mirror)
-		)
-	)
 	(gr_text "IO16K"
 		(at 135.636 134.0612 90)
 		(layer "B.SilkS")
@@ -35567,7 +35555,7 @@
 		)
 	)
 	(gr_text "x -> No connection\n- Free"
-		(at 142.2908 84.2264 -90)
+		(at 142.494 70.485 -90)
 		(layer "B.SilkS")
 		(uuid "37b5660e-42ce-4831-98bc-1a081e6756b5")
 		(effects
@@ -37017,7 +37005,7 @@
 		)
 	)
 	(gr_text "x -> No connection\n- Free"
-		(at 162.306 87.249 90)
+		(at 162.814 82.169 90)
 		(layer "F.SilkS")
 		(uuid "8f395e4b-6304-42f2-8ca5-8bca4f00e68a")
 		(effects
@@ -37206,18 +37194,6 @@
 			(font
 				(size 2 2)
 				(thickness 0.3)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "BOOT"
-		(at 111.8362 56.6166 90)
-		(layer "F.SilkS")
-		(uuid "b315732b-a8d4-418c-aafa-b9ed7ccdf8fa")
-		(effects
-			(font
-				(size 0.8 0.8)
-				(thickness 0.1)
 			)
 			(justify left bottom)
 		)
