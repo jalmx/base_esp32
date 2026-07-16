@@ -1,0 +1,136 @@
+site_name: Base ESP32 DevKit V4
+site_url: https://xizuth.github.io/base_esp32
+site_author: Josef Leyva
+site_description: Placa de entrenamiento para IoT y sistemas embebidos con ESP32 DevKit V4
+
+repo_url: https://github.com/Xizuth/base_esp32
+repo_name: Xizuth/base_esp32
+
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2024 Xizuth - Licencia MIT
+
+theme:
+  name: material
+  language: es
+  logo: images/assets/logo_x_b_800.png
+  favicon: images/assets/logo_x_b_800.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Xizuth
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/
+
+nav:
+  - Inicio: index.md
+  - Proyecto:
+    - Visión general: proyecto/overview.md
+    - Historia y versiones: proyecto/historia.md
+    - Licencia: proyecto/licencia.md
+  - Hardware:
+    - Visión general: hardware/overview.md
+    - Esquemático: hardware/esquematico.md
+    - PCB: hardware/pcb.md
+    - Componentes: hardware/componentes.md
+    - Pinout ESP32: hardware/pinout.md
+  - Alimentación:
+    - Visión general: alimentacion/overview.md
+    - Reguladores: alimentacion/reguladores.md
+    - Protecciones: alimentacion/proteccion.md
+  - Periféricos:
+    - LEDs: perifericos/leds.md
+    - Buzzer: perifericos/buzzer.md
+    - Sensores: perifericos/sensores.md
+    - Actuadores: perifericos/actuadores.md
+    - Entradas: perifericos/entradas.md
+    - Monitoreo: perifericos/monitoreo.md
+  - Prácticas:
+    - Índice: practicas/index.md
+    - Beginner:
+      - "01 - Hello World LED": practicas/beginner/01-hello-world.md
+      - "02 - PWM LED": practicas/beginner/02-pwm.md
+      - "03 - Lectura Analógica": practicas/beginner/03-analog-read.md
+      - "04 - Interrupciones": practicas/beginner/04-interrupts.md
+    - Intermediate:
+      - "05 - Temperatura": practicas/intermediate/05-temperature.md
+      - "06 - Motor DC": practicas/intermediate/06-motor-control.md
+      - "07 - Buzzer": practicas/intermediate/07-buzzer.md
+      - "08 - Switches": practicas/intermediate/08-switches.md
+    - Advanced:
+      - "09 - Monitoreo Corriente": practicas/advanced/09-current-monitor.md
+      - "10 - Servo": practicas/advanced/10-servo.md
+      - "11 - Fusión de Sensores": practicas/advanced/11-sensor-fusion.md
+      - "12 - Comunicación": practicas/advanced/12-communication.md
+  - Ensamblaje:
+    - Visión general: ensamblaje/index.md
+    - Componentes: ensamblaje/componentes.md
+    - Soldadura: ensamblaje/soldadura.md
+    - Paso a paso: ensamblaje/paso-a-paso.md
+    - Verificación: ensamblaje/verificacion.md
+  - Fabricación:
+    - Archivos Gerber: fabricacion/gerber.md
+    - Cómo fabricar: fabricacion/fabricacion.md
+    - Fritzing: fabricacion/fritzing.md
+  - KiCad:
+    - Instalación: kicad/instalacion.md
+    - Estructura del proyecto: kicad/estructura.md
+    - Modificar el diseño: kicad/modificacion.md
+    - Librerías: kicad/librerias.md
+  - Recursos:
+    - Datasheets: recursos/datasheets.md
+    - Enlaces útiles: recursos/enlaces.md
+    - Herramientas: recursos/tools.md
+  - Contribuir: contribuir/guia.md
+  - Acerca de:
+    - Créditos: about/creditos.md
