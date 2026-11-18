@@ -1,13 +1,14 @@
 [project]
-name = "documentation base"
+name = "xb-uno"
 version = "0.1.0"
-description = "Board to training with esp32 devkit v4"
+description = "Board for prototyping"
 authors = [
     {name = "Josef Leyva",email = "jalm_x@hotmail.com"}
 ]
-requires-python = ">=3.11"
+license = "CERN-OHL-S-2.0"
+requires-python = ">=3.12"
 dependencies = [
-    "mkdocs-material (>=9.7.6,<10.0.0)"
+    "mkdocs-material (>=9.8.1,<10.0.0)"
 ]
 
 

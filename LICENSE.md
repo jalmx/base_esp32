@@ -1,22 +1,13 @@
+XB-Uno (Xizuth Board Uno) — Plataforma Modular de Hardware Embebido
+Copyright (c) 2024-2026 Xizuth
 
-The MIT License (MIT)
+Este proyecto de hardware está licenciado bajo los términos de la:
+CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
 
-Copyright (c) 2024 Xizuth
+Puedes redistribuir, fabricar, vender y modificar este diseño bajo los términos
+de la licencia CERN-OHL-S v2 publicada por el CERN. Cualquier modificación o
+diseño derivado que sea distribuido o fabricado debe incluir todos sus archivos
+fuente editables y licenciarse estrictamente bajo CERN-OHL-S-2.0.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Consulta el texto completo de la licencia en:
+https://ohwr.org/cern_ohl_s_v2.txt

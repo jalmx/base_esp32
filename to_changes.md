@@ -5,5 +5,4 @@
 - Agregar un LED RGB,
 - Los primeros 3 leds a positivo, invertir para que no choquen con el RGB
 - invertir la terminal de tornillos
-- licencia CERN-OHL-S v2.0.
 - Agregar github action y dar permiso en repo

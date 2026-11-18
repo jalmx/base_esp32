@@ -1,10 +1,10 @@
 site_name: Base ESP32 DevKit V4
-site_url: https://xizuth.github.io/base_esp32
+site_url: https://github.com/jalmx/base_esp32
 site_author: Josef Leyva
 site_description: Placa de entrenamiento para IoT y sistemas embebidos con ESP32 DevKit V4
 
-repo_url: https://github.com/Xizuth/base_esp32
-repo_name: Xizuth/base_esp32
+repo_url: https://github.com/jalmx/base_esp32
+repo_name: jalmx/base_esp32
 
 edit_uri: edit/main/docs/
 
@@ -68,7 +68,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/Xizuth
+      link: https://github.com/jalmx/
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/
 
