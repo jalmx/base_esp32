@@ -1,0 +1,3243 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Placa de entrenamiento para IoT y sistemas embebidos con ESP32 DevKit V4">
+      
+      
+        <meta name="author" content="Josef Leyva">
+      
+      
+        <link rel="canonical" href="https://github.com/jalmx/base_esp32/kicad/librerias/">
+      
+      
+        <link rel="prev" href="../modificacion/">
+      
+      
+      
+      <link rel="icon" href="../../images/assets/logo_x_b_800.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>Librerías - Base ESP32 DevKit V4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#kicad-librerias-personalizadas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Base ESP32 DevKit V4" class="md-header__button md-logo" aria-label="Base ESP32 DevKit V4" data-md-component="logo">
+      
+  <img src="../../images/assets/logo_x_b_800.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Base ESP32 DevKit V4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Librerías
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jalmx/base_esp32" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jalmx/base_esp32
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../proyecto/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Proyecto
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardware/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Hardware
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../alimentacion/overview/" class="md-tabs__link">
+          
+  
+    
+  
+  Alimentación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../perifericos/leds/" class="md-tabs__link">
+          
+  
+    
+  
+  Periféricos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../practicas/" class="md-tabs__link">
+          
+  
+    
+  
+  Prácticas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ensamblaje/" class="md-tabs__link">
+          
+  
+    
+  
+  Ensamblaje
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fabricacion/gerber/" class="md-tabs__link">
+          
+  
+    
+  
+  Fabricación
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../instalacion/" class="md-tabs__link">
+          
+  
+    
+  
+  KiCad
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../recursos/datasheets.md" class="md-tabs__link">
+          
+  
+    
+  
+  Recursos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contribuir/guia.md" class="md-tabs__link">
+        
+  
+    
+  
+  Contribuir
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/creditos.md" class="md-tabs__link">
+          
+  
+    
+  
+  Acerca de
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Base ESP32 DevKit V4" class="md-nav__button md-logo" aria-label="Base ESP32 DevKit V4" data-md-component="logo">
+      
+  <img src="../../images/assets/logo_x_b_800.png" alt="logo">
+
+    </a>
+    Base ESP32 DevKit V4
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jalmx/base_esp32" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jalmx/base_esp32
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Proyecto
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Proyecto
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proyecto/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visión general
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proyecto/historia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Historia y versiones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../proyecto/licencia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Licencia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visión general
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/esquematico/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Esquemático
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/pcb/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PCB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/componentes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/pinout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pinout ESP32
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Alimentación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Alimentación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimentacion/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visión general
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimentacion/reguladores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reguladores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../alimentacion/proteccion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Protecciones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Periféricos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Periféricos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/leds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LEDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/buzzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Buzzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/sensores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sensores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/actuadores/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Actuadores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/entradas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Entradas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../perifericos/monitoreo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Monitoreo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../practicas/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Prácticas
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Prácticas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginner
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Beginner
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/beginner/01-hello-world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 - Hello World LED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/beginner/02-pwm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 - PWM LED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/beginner/03-analog-read/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 - Lectura Analógica
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/beginner/04-interrupts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 - Interrupciones
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/intermediate/05-temperature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    05 - Temperatura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/intermediate/06-motor-control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    06 - Motor DC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/intermediate/07-buzzer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 - Buzzer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/intermediate/08-switches/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    08 - Switches
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/advanced/09-current-monitor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    09 - Monitoreo Corriente
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/advanced/10-servo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10 - Servo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/advanced/11-sensor-fusion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11 - Fusión de Sensores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practicas/advanced/12-communication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12 - Comunicación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ensamblaje/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Ensamblaje
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Ensamblaje
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ensamblaje/componentes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Componentes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ensamblaje/soldadura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Soldadura
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ensamblaje/paso-a-paso/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Paso a paso
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ensamblaje/verificacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verificación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fabricación
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Fabricación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fabricacion/gerber/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archivos Gerber
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fabricacion/fabricacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cómo fabricar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fabricacion/fritzing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fritzing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    KiCad
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            KiCad
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../instalacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalación
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../estructura/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Estructura del proyecto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modificacion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modificar el diseño
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Librerías
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Librerías
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#librerias-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Librerías del proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Librerías del proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esp32-devkitckicad_sym-simbolo-esp32-devkit-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ESP32-DevKitC.kicad_sym - Símbolo ESP32 DevKit V4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mx1508kicad_sym-simbolo-driver-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. MX1508.kicad_sym - Símbolo Driver Motor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mx1508kicad_mod-footprint-mx1508" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. MX1508.kicad_mod - Footprint MX1508
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-logo_xkicad_mod-logo-xizuth" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. logo_x.kicad_mod - Logo Xizuth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-qrkicad_mod-qr-code-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. qr.kicad_mod - QR Code GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-libreria-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir librería al proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Añadir librería al proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simbolos-kicad_sym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Símbolos (.kicad_sym)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footprints-kicad_mod-en-pretty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footprints (.kicad_mod en .pretty)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-nuevo-simbolo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear nuevo símbolo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear nuevo símbolo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-cero-symbol-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde cero (Symbol Editor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-datasheet-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde datasheet (Import)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-nuevo-footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear nuevo footprint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear nuevo footprint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-cero-footprint-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde cero (Footprint Editor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estandares-ipc-7351-niveles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estándares IPC-7351 (Niveles)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatos-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos soportados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-a-footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir a footprint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-modelos-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes modelos 3D
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejores-practicas-librerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mejores prácticas librerías
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compartir-librerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compartir librerías
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compartir librerías">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-submodule-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git submodule (recomendado)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copia-local-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copia local (simple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kicad-library-convention-klc" class="md-nav__link">
+    <span class="md-ellipsis">
+      KiCad Library Convention (KLC)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recursos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Recursos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/datasheets.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datasheets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/enlaces.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enlaces útiles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../recursos/tools.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Herramientas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribuir/guia.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribuir
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Acerca de
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Acerca de
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/creditos.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Créditos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#librerias-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Librerías del proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Librerías del proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-esp32-devkitckicad_sym-simbolo-esp32-devkit-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ESP32-DevKitC.kicad_sym - Símbolo ESP32 DevKit V4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mx1508kicad_sym-simbolo-driver-motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. MX1508.kicad_sym - Símbolo Driver Motor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-mx1508kicad_mod-footprint-mx1508" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. MX1508.kicad_mod - Footprint MX1508
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-logo_xkicad_mod-logo-xizuth" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. logo_x.kicad_mod - Logo Xizuth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-qrkicad_mod-qr-code-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. qr.kicad_mod - QR Code GitHub
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#anadir-libreria-al-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir librería al proyecto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Añadir librería al proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simbolos-kicad_sym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Símbolos (.kicad_sym)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footprints-kicad_mod-en-pretty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footprints (.kicad_mod en .pretty)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-nuevo-simbolo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear nuevo símbolo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear nuevo símbolo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-cero-symbol-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde cero (Symbol Editor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desde-datasheet-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde datasheet (Import)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-nuevo-footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crear nuevo footprint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear nuevo footprint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#desde-cero-footprint-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desde cero (Footprint Editor)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estandares-ipc-7351-niveles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estándares IPC-7351 (Niveles)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatos-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatos soportados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-a-footprint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Añadir a footprint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fuentes-modelos-3d" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fuentes modelos 3D
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejores-practicas-librerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mejores prácticas librerías
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compartir-librerias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compartir librerías
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compartir librerías">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-submodule-recomendado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git submodule (recomendado)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copia-local-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copia local (simple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kicad-library-convention-klc" class="md-nav__link">
+    <span class="md-ellipsis">
+      KiCad Library Convention (KLC)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/jalmx/base_esp32/edit/main/docs/kicad/librerias.md" title="Editar esta página" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="kicad-librerias-personalizadas">KiCad - Librerías personalizadas<a class="headerlink" href="#kicad-librerias-personalizadas" title="Permanent link">&para;</a></h1>
+<h2 id="librerias-del-proyecto">Librerías del proyecto<a class="headerlink" href="#librerias-del-proyecto" title="Permanent link">&para;</a></h2>
+<h3 id="1-esp32-devkitckicad_sym-simbolo-esp32-devkit-v4">1. <code>ESP32-DevKitC.kicad_sym</code> - Símbolo ESP32 DevKit V4<a class="headerlink" href="#1-esp32-devkitckicad_sym-simbolo-esp32-devkit-v4" title="Permanent link">&para;</a></h3>
+<p><strong>Ubicación:</strong> <code>assets/ESP32-DEVKIT-V1/ESP32-DevKitC.kicad_sym</code></p>
+<p><strong>Estructura:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ESP32-DevKitC (Root)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── Unit A: Power (Pins 1-6, 25-28, 37-38)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   VIN, 3V3, GND, EN, VP, VN
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── Unit B: GPIO 0-17
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│   GPIO0-17 (Strapping notes)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── Unit C: GPIO 18-39
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│   GPIO18-39 (ADC, Touch, Input-only)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── Unit D: ADC / Analog
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│   ADC1_CH0-7, ADC2_CH0-9
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── Unit E: Communication
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│   SPI, I2C, UART, I2S, SDIO
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>└── Unit F: Special / Strapping
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    BOOT, Strapping pins highlighted
+</code></pre></div></p>
+<p><strong>Propiedades clave:</strong>
+- <code>Reference</code>: "U"
+- <code>Value</code>: "ESP32-DevKitC-V4"
+- <code>Footprint</code>: "ESP32-DevKitC:ESP32-DevKitC"
+- <code>Datasheet</code>: "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wrover-32e_datasheet_en.pdf"
+- <code>ki_keywords</code>: "esp32 devkit wifi bluetooth mcu"
+- <code>ki_fp_filters</code>: "ESP32*"</p>
+<p><strong>Pines strapping marcados</strong> (propiedad <code>Description</code>):
+- GPIO0: "Boot mode select (LOW=Download)"
+- GPIO2: "Boot mode (HIGH=SDIO), MTDI"
+- GPIO12: "Flash voltage (LOW=3.3V, HIGH=1.8V)"
+- GPIO15: "Boot logging (HIGH=Silent)"</p>
+<hr />
+<h3 id="2-mx1508kicad_sym-simbolo-driver-motor">2. <code>MX1508.kicad_sym</code> - Símbolo Driver Motor<a class="headerlink" href="#2-mx1508kicad_sym-simbolo-driver-motor" title="Permanent link">&para;</a></h3>
+<p><strong>Ubicación:</strong> <code>MX1508.kicad_sym</code></p>
+<p><strong>Unidades:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Unit 1: Power
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  VM (Pin 8) - Motor supply
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  VCC (Pin 1) - Logic supply
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  GND (Pin 4,5) - Ground (2 pines)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Unit 2: Channel A (H-Bridge 1)
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  IN1 (Pin 2) - Input A1
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  IN2 (Pin 3) - Input A2
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  OUT1 (Pin 7) - Output A1
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  OUT2 (Pin 6) - Output A2
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>Unit 3: Channel B (H-Bridge 2)
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  IN3 (Pin 9) - Input B1
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  IN4 (Pin 10) - Input B2
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  OUT3 (Pin 13) - Output B1
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  OUT4 (Pin 12) - Output B2
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>Unit 4: Thermal
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  EPAD (Pad central) - Thermal pad (GND/VM)
+</code></pre></div></p>
+<p><strong>Footprint asignado:</strong> <code>MX1508_SOP8</code> (custom)</p>
+<hr />
+<h3 id="3-mx1508kicad_mod-footprint-mx1508">3. <code>MX1508.kicad_mod</code> - Footprint MX1508<a class="headerlink" href="#3-mx1508kicad_mod-footprint-mx1508" title="Permanent link">&para;</a></h3>
+<p><strong>Ubicación:</strong> <code>MX1508.kicad_mod</code></p>
+<p><strong>Características:</strong>
+- SOP-8 estándar + pad térmico central expuesto
+- Pads: 0.65mm pitch, 0.4×0.6mm
+- Thermal pad: 3.2×2.2mm (centrado)
+- Courtyard: 6.5×5.5mm
+- 3D model: <code>mx1508.step</code> (opcional)</p>
+<p><strong>Zona térmica PCB:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>En PCB: Polygon en F.Cu (VCC_MOTOR) + B.Cu (GND)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  Vías térmicas: 0.3mm drill, 0.6mm pad
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  Grid: 1mm bajo pad térmico
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  Conectado a: GND pour (Bottom) + VCC_MOTOR pour (Top)
+</code></pre></div></p>
+<hr />
+<h3 id="4-logo_xkicad_mod-logo-xizuth">4. <code>logo_x.kicad_mod</code> - Logo Xizuth<a class="headerlink" href="#4-logo_xkicad_mod-logo-xizuth" title="Permanent link">&para;</a></h3>
+<p><strong>Ubicación:</strong> <code>logo_footprint/logo_x.kicad_mod</code></p>
+<p><strong>Contenido:</strong>
+- Gráficos vectoriales en <code>F.SilkS</code> (Top Silkscreen)
+- Dimensiones: ~15×15mm
+- Origen: Centro logo
+- Layer: <code>F.SilkS</code> (visible en PCB)</p>
+<p><strong>Uso:</strong>
+1. PCB Editor → <code>O</code> (Add Footprint) → "logo_x"
+2. Colocar esquina PCB (ej. superior derecha)
+3. <code>F</code> (Flip) si necesita en Bottom</p>
+<hr />
+<h3 id="5-qrkicad_mod-qr-code-github">5. <code>qr.kicad_mod</code> - QR Code GitHub<a class="headerlink" href="#5-qrkicad_mod-qr-code-github" title="Permanent link">&para;</a></h3>
+<p><strong>Ubicación:</strong> <code>logo_footprint/qr.kicad_mod</code></p>
+<p><strong>Generación:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Generar QR SVG</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>qrencode<span class="w"> </span>-o<span class="w"> </span>qr.svg<span class="w"> </span>-s<span class="w"> </span><span class="m">10</span><span class="w"> </span>-l<span class="w"> </span>M<span class="w"> </span><span class="s2">&quot;https://github.com/Xizuth/base_esp32&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Convertir a footprint KiCad</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># Opcional: Script python svg2mod.py</span>
+</code></pre></div></p>
+<p><strong>Contenido:</strong>
+- Módulos en <code>F.SilkS</code> (puntos QR)
+- Versión compacta 21×21 módulos
+- Tamaño: ~10×10mm
+- Quiet zone: 4 módulos</p>
+<hr />
+<h2 id="anadir-libreria-al-proyecto">Añadir librería al proyecto<a class="headerlink" href="#anadir-libreria-al-proyecto" title="Permanent link">&para;</a></h2>
+<h3 id="simbolos-kicad_sym">Símbolos (<code>.kicad_sym</code>)<a class="headerlink" href="#simbolos-kicad_sym" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Preferences → Manage Symbol Libraries
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  → Project Specific Libraries tab
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  → + (Add)
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  → Nickname: &quot;project_symbols&quot;
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  → Library Path: &quot;${KIPRJMOD}/ESP32-DevKitC.kicad_sym&quot;
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>  → Plugin: &quot;KiCad&quot;
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  → OK
+</code></pre></div>
+<h3 id="footprints-kicad_mod-en-pretty">Footprints (<code>.kicad_mod</code> en <code>.pretty</code>)<a class="headerlink" href="#footprints-kicad_mod-en-pretty" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Preferences → Manage Footprint Libraries
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  → Project Specific Libraries tab
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  → + (Add)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  → Nickname: &quot;project_footprints&quot;
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  → Library Path: &quot;${KIPRJMOD}/my_symbols.pretty&quot;
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  → Plugin: &quot;KiCad&quot;
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  → OK
+</code></pre></div>
+<blockquote>
+<p><code>${KIPRJMOD}</code> = variable = carpeta del proyecto <code>.kicad_pro</code></p>
+</blockquote>
+<hr />
+<h2 id="crear-nuevo-simbolo">Crear nuevo símbolo<a class="headerlink" href="#crear-nuevo-simbolo" title="Permanent link">&para;</a></h2>
+<h3 id="desde-cero-symbol-editor">Desde cero (Symbol Editor)<a class="headerlink" href="#desde-cero-symbol-editor" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>1. File → New Symbol Library → &quot;my_lib.kicad_sym&quot;
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>2. Create new symbol → Name: &quot;Mi_IC&quot;
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>3. Add pins (Pin tool `P`):
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>   - Number, Name, Type (Input/Output/Power/Passive)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>   - Graphic style: Line/Inverted/Clock/Low level
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>4. Draw body (Rectangle `R`, Circle `C`, Arc `A`)
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>5. Add properties (Property tool `P`):
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>   Reference: &quot;U&quot;
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>   Value: &quot;Mi_IC&quot;
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>   Footprint: &quot;Mi_IC_Footprint&quot;
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>   Datasheet: &quot;URL&quot;
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>   ki_keywords: &quot;palabras clave&quot;
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>6. Save library → Add to project
+</code></pre></div>
+<h3 id="desde-datasheet-import">Desde datasheet (Import)<a class="headerlink" href="#desde-datasheet-import" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>1. Symbol Editor → File → Import → &quot;KiCad Symbol&quot; / &quot;Eagle&quot; / &quot;Altium&quot;
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>2. Seleccionar archivo → Import
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>3. Revisar pines, asignar footprint
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>4. Guardar en librería proyecto
+</code></pre></div>
+<hr />
+<h2 id="crear-nuevo-footprint">Crear nuevo footprint<a class="headerlink" href="#crear-nuevo-footprint" title="Permanent link">&para;</a></h2>
+<h3 id="desde-cero-footprint-editor">Desde cero (Footprint Editor)<a class="headerlink" href="#desde-cero-footprint-editor" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>1. File → New Footprint Library → &quot;my_lib.pretty&quot;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>2. New Footprint → Name: &quot;Mi_Footprint&quot;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>3. Pads (Pad tool `P`):
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>   - SMD: Type SMD, Shape Rect/Round, Size X/Y
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>   - THT: Type Through-hole, Shape Circular/Oval, Drill size
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>   - Number: 1, 2, 3... (match symbol)
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>4. Courtyard (Draw → Polygon `Ctrl+Shift+P`):
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>   - Layer: F.CrtYd / B.CrtYd
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>   - Clearance IPC: 0.25mm (Nivel 1) / 0.5mm (Nivel 2)
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>5. Silkscreen (Layer F.SilkS):
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>   - Outline, Pin 1 marker, Reference designator
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>5. Properties:
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>   - Description: &quot;Mi footprint description&quot;
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>   - Tags: &quot;palabras clave&quot;
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>   - 3D Model: Add .step/.wrl (opcional)
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>6. Save → Add library to project
+</code></pre></div>
+<h3 id="estandares-ipc-7351-niveles">Estándares IPC-7351 (Niveles)<a class="headerlink" href="#estandares-ipc-7351-niveles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Nivel</th>
+<th>Densidad</th>
+<th>Clearance courtyard</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>L (Least)</strong></td>
+<td>Baja</td>
+<td>0.50mm</td>
+<td>Prototipos, mano</td>
+</tr>
+<tr>
+<td><strong>N (Nominal)</strong></td>
+<td>Media</td>
+<td>0.25mm</td>
+<td><strong>Producción estándar</strong></td>
+</tr>
+<tr>
+<td><strong>M (Most)</strong></td>
+<td>Alta</td>
+<td>0.10mm</td>
+<td>Alta densidad, automático</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recomendado:</strong> Nivel N (Nominal)</p>
+<hr />
+<h2 id="3d-models">3D Models<a class="headerlink" href="#3d-models" title="Permanent link">&para;</a></h2>
+<h3 id="formatos-soportados">Formatos soportados<a class="headerlink" href="#formatos-soportados" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.step</code> / <code>.stp</code> (STEP AP214 - preferido)</li>
+<li><code>.wrl</code> (VRML 2.0 - legacy)</li>
+<li><code>.stl</code> (Solo visualización, sin colores)</li>
+</ul>
+<h3 id="anadir-a-footprint">Añadir a footprint<a class="headerlink" href="#anadir-a-footprint" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Footprint Editor → Footprint Properties → 3D Models → +
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  → File: &quot;model.step&quot;
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  → Offset X/Y/Z: 0, 0, 0 (ajustar)
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  → Rotation X/Y/Z: 0, 0, 0
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  → Scale: 1, 1, 1
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  → Opacity: 1.0
+</code></pre></div>
+<h3 id="fuentes-modelos-3d">Fuentes modelos 3D<a class="headerlink" href="#fuentes-modelos-3d" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>URL</th>
+<th>Licencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KiCad 3D Models</strong></td>
+<td>https://github.com/KiCad/kicad-packages3D</td>
+<td>CC-BY-SA 4.0</td>
+</tr>
+<tr>
+<td><strong>SnapEDA</strong></td>
+<td>https://www.snapeda.com/</td>
+<td>Gratis registro</td>
+</tr>
+<tr>
+<td><strong>LCSC/JLCPCB</strong></td>
+<td>https://lcsc.com/</td>
+<td>Gratis</td>
+</tr>
+<tr>
+<td><strong>GrabCAD</strong></td>
+<td>https://grabcad.com/</td>
+<td>Varias</td>
+</tr>
+<tr>
+<td><strong>Fabricante</strong></td>
+<td>Web del fabricante</td>
+<td>Ver datasheet</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="mejores-practicas-librerias">Mejores prácticas librerías<a class="headerlink" href="#mejores-practicas-librerias" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Práctica</th>
+<th>Por qué</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombres descriptivos</strong></td>
+<td><code>Conn_01x04_P2.54mm_Vertical</code> vs <code>J1</code></td>
+</tr>
+<tr>
+<td><strong>Prefijos consistentes</strong></td>
+<td><code>Resistor_</code>, <code>Capacitor_</code>, <code>IC_</code>, <code>Conn_</code></td>
+</tr>
+<tr>
+<td><strong>Unidades métricas</strong></td>
+<td>mm para todo (KiCad nativo mm)</td>
+</tr>
+<tr>
+<td><strong>Origen en centro</strong></td>
+<td>Para SMD: centro cuerpo; THT: pin 1 o centro</td>
+</tr>
+<tr>
+<td><strong>Pin 1 marcado</strong></td>
+<td>Círculo, muesca, chanfle en silkscreen</td>
+</tr>
+<tr>
+<td><strong>Courtyard IPC</strong></td>
+<td>Nivel N para producción</td>
+</tr>
+<tr>
+<td><strong>3D model aligned</strong></td>
+<td>Verificar en 3D Viewer (<code>Alt+3</code>)</td>
+</tr>
+<tr>
+<td><strong>Versionar librerías</strong></td>
+<td>Commit <code>.kicad_sym</code> y <code>.pretty</code> en repo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="compartir-librerias">Compartir librerías<a class="headerlink" href="#compartir-librerias" title="Permanent link">&para;</a></h2>
+<h3 id="git-submodule-recomendado">Git submodule (recomendado)<a class="headerlink" href="#git-submodule-recomendado" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>https://github.com/tu-usuario/kicad-libs.git<span class="w"> </span>libs/kicad-libs
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># En proyecto:</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Preferences<span class="w"> </span>→<span class="w"> </span>Libraries<span class="w"> </span>→<span class="w"> </span><span class="si">${</span><span class="nv">KIPRJMOD</span><span class="si">}</span>/../libs/kicad-libs/symbols
+</code></pre></div>
+<h3 id="copia-local-simple">Copia local (simple)<a class="headerlink" href="#copia-local-simple" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>cp<span class="w"> </span>-r<span class="w"> </span>/ruta/a/librerias/*<span class="w"> </span>./mis_libs/
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="c1"># En KiCad: ${KIPRJMOD}/mis_libs/</span>
+</code></pre></div>
+<h3 id="kicad-library-convention-klc">KiCad Library Convention (KLC)<a class="headerlink" href="#kicad-library-convention-klc" title="Permanent link">&para;</a></h3>
+<p>Seguir <a href="https://github.com/KiCad/kicad-library-conventions">KLC</a> para contribuir upstream:
+- Nomenclatura, estructura, metadatos, 3D models
+- Requerido para merge en librería oficial KiCad</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Xizuth - Licencia MIT
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/jalmx/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://linkedin.com/" target="_blank" rel="noopener" title="linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "content.tabs.link", "search.highlight", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
