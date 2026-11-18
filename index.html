@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#base-esp32-devkit-v4" class="md-skip">
+        <a href="#xb-uno" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -561,6 +561,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Vistas de la placa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Superior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-inferior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Inferior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-lateral" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Lateral
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#render-raytraced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Raytraced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -569,6 +611,30 @@
       Silkscreen PCB
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Silkscreen PCB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trasera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trasera
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2390,6 +2456,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Vistas de la placa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3d-superior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Superior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-inferior" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Inferior
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-lateral" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Lateral
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#render-raytraced" class="md-nav__link">
+    <span class="md-ellipsis">
+      Render Raytraced
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2398,6 +2506,30 @@
       Silkscreen PCB
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Silkscreen PCB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frontal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frontal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trasera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trasera
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2460,11 +2592,19 @@
   
 
 
-<h1 id="base-esp32-devkit-v4">Base ESP32 DevKit V4<a class="headerlink" href="#base-esp32-devkit-v4" title="Permanent link">&para;</a></h1>
-<div class="admonition info">
-<p class="admonition-title">Placa de entrenamiento para IoT y sistemas embebidos</p>
-<p>Una placa base diseñada para facilitar el aprendizaje y prototipado con el módulo <strong>ESP32 DevKit V4</strong>. Incluye reguladores de voltaje, drivers de motor, sensores, actuadores y múltiples conectores para expansión.</p>
-</div>
+<h1 id="xb-uno">XB-Uno<a class="headerlink" href="#xb-uno" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Base ESP32 DevKit V4</p>
+</blockquote>
+<p>Plataforma modular de desarrollo de hardware embebido y IoT basada en el microcontrolador ESP32 (DevKit V4) que concentra periféricos de entrada, salida, potencia y comunicación bajo una topología de interconexión no estática. A diferencia de las tarjetas entrenadoras convencionales con conexiones rígidas, este diseño incorpora bancos de DIP switches y arreglos de jumpers de aislamiento en todas sus secciones: fuentes de alimentación con bypass, entradas digitales y analógicas seleccionables, indicadores LED, puente H para motores DC, zumbador, zócalos para sensores removibles y puertos de expansión para teclado matricial, I2C, SPI y UART. De esta forma, es posible desconectar cualquier elemento integrado para liberar los pines GPIO del ESP32, interactuar con hardware externo o instrumentar las líneas con osciloscopio y analizador lógico durante la depuración de firmware.</p>
+<ul>
+<li><strong>Gestión de energía:</strong> Bornera de entrada (<code>J8</code>) conectada a un regulador de 5 V (<code>LM7805</code>) con puente de <em>bypass</em>, acompañada de dos reguladores de 3.3 V (<code>AMS1117</code>: uno exclusivo para la placa/ESP32 y otro para periféricos externos) y rieles de distribución de 5 V, 3.3 V y GND.</li>
+<li><strong>Entradas digitales:</strong> Dos pulsadores físicos (<code>INPUT_D1</code>, <code>INPUT_D2</code>) y un <em>DIP switch</em> de 4 posiciones (<code>SW6</code>) con cabezales de acceso para los pines de entrada del ESP32 (GPIO 34, 35, 36 y 39).</li>
+<li><strong>Entradas analógicas seleccionables:</strong> Dos canales analógicos (<code>AI_1</code>, <code>AI_2</code>) configurables mediante interruptores selectores (<code>SW8</code>, <code>SW9</code>) para alternar entre dos potenciómetros (<code>RV1</code>, <code>RV2</code>), una fotorresistencia (<code>LDR</code>) y un sensor de temperatura analógico (<code>LM35</code>).</li>
+<li><strong>Salidas digitales y actuadores:</strong> Cinco indicadores LED con <em>jumpers</em> de aislamiento individual (GPIO 33, 15, 32, 2 y 4), un zumbador piezoeléctrico (<code>BZ1</code>), cabezal para servomotor y un controlador puente H dual (<code>MX1508</code>) para motores DC.</li>
+<li><strong>Sensores removibles:</strong> Zócalos intercambiables con <em>jumpers</em> de desconexión para sensor ultrasónico (<code>HC-SR04</code>), sensor de temperatura y humedad (<code>DHT11</code>) y sensor digital de temperatura 1-Wire (<code>DS18B20</code>).</li>
+<li><strong>Comunicación y expansión:</strong> Puertos dedicados (macho y hembra) para buses <strong>I2C</strong>, <strong>SPI</strong> y <strong>UART (TX/RX)</strong>, además de un puerto de expansión de 8 líneas aislado por dos <em>DIP switches</em> (<code>SW1</code>, <code>SW2</code>) orientado a teclados matriciales o E/S de propósito general.</li>
+</ul>
 <h2 id="caracteristicas-principales">Características principales<a class="headerlink" href="#caracteristicas-principales" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -2502,45 +2642,27 @@
 <td><strong>Conectores</strong></td>
 <td>40+ pines header, terminal tornillo, servo</td>
 </tr>
-<tr>
-<td><strong>Monitoreo</strong></td>
-<td>Sensor de corriente A9013</td>
-</tr>
 </tbody>
 </table>
 <h2 id="vistas-de-la-placa">Vistas de la placa<a class="headerlink" href="#vistas-de-la-placa" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">3D Superior</label><label for="__tabbed_1_2">3D Inferior</label><label for="__tabbed_1_3">3D Lateral</label><label for="__tabbed_1_4">Render Raytraced</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="3d-superior">3D Superior<a class="headerlink" href="#3d-superior" title="Permanent link">&para;</a></h3>
 <p><img alt="3D Top" src="images/3D/base_esp32_top.png" /></p>
-</div>
-<div class="tabbed-block">
+<h3 id="3d-inferior">3D Inferior<a class="headerlink" href="#3d-inferior" title="Permanent link">&para;</a></h3>
 <p><img alt="3D Bottom" src="images/3D/base_esp32_botton.png" /></p>
-</div>
-<div class="tabbed-block">
+<h3 id="3d-lateral">3D Lateral<a class="headerlink" href="#3d-lateral" title="Permanent link">&para;</a></h3>
 <p><img alt="3D Side" src="images/3D/base_esp32_l.png" /></p>
-</div>
-<div class="tabbed-block">
+<h3 id="render-raytraced">Render Raytraced<a class="headerlink" href="#render-raytraced" title="Permanent link">&para;</a></h3>
 <p><img alt="3D Ray" src="images/3D/base_esp32_top_ray.png" /></p>
-</div>
-</div>
-</div>
 <h2 id="silkscreen-pcb">Silkscreen PCB<a class="headerlink" href="#silkscreen-pcb" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Frontal</label><label for="__tabbed_2_2">Trasera</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
+<h3 id="frontal">Frontal<a class="headerlink" href="#frontal" title="Permanent link">&para;</a></h3>
 <p><img alt="Silkscreen Top" src="images/pcb/base_esp32-F_Silkscreen.png" /></p>
-</div>
-<div class="tabbed-block">
+<h3 id="trasera">Trasera<a class="headerlink" href="#trasera" title="Permanent link">&para;</a></h3>
 <p><img alt="Silkscreen Bottom" src="images/pcb/base_esp32-B_Silkscreen.png" /></p>
-</div>
-</div>
-</div>
 <h2 id="esquematico">Esquemático<a class="headerlink" href="#esquematico" title="Permanent link">&para;</a></h2>
-<p><img alt="Esquemático" src="images/fritzing_out/schematic.svg" /></p>
+<p><img alt="Esquemático" src="images/fritzing_out/kicad_svg_plots/board_render.png" /></p>
 <h2 id="inicio-rapido">Inicio rápido<a class="headerlink" href="#inicio-rapido" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Clonar repositorio</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Xizuth/base_esp32.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jalmx/base_esp32.git
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">cd</span><span class="w"> </span>base_esp32
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Instalar dependencias de documentación</span>
@@ -2551,13 +2673,13 @@
 </code></pre></div>
 <h2 id="enlaces-utiles">Enlaces útiles<a class="headerlink" href="#enlaces-utiles" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://xizuth.github.io/base_esp32">Documentación completa</a></li>
-<li><a href="https://github.com/Xizuth/base_esp32">Repositorio GitHub</a></li>
-<li><a href="https://github.com/Xizuth/base_esp32/issues">Reportar issue</a></li>
+<li><a href="https://www.alejandro-leyva.com/base_esp32/">Documentación completa</a></li>
+<li><a href="https://github.com/jalmx/base_esp32">Repositorio GitHub</a></li>
+<li><a href="https://github.com/jalmx/base_esp32/issues">Reportar issue</a></li>
 <li><a href="https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wrover-32e_datasheet_en.pdf">Datasheet ESP32</a></li>
 </ul>
 <h2 id="licencia">Licencia<a class="headerlink" href="#licencia" title="Permanent link">&para;</a></h2>
-<p>Este proyecto está bajo licencia <strong>MIT</strong>. Ver <a href="../LICENSE.md">LICENSE.md</a> para detalles.</p>
+<p>Este proyecto está bajo licencia <strong>CERN-OHL-S-2.0</strong>. Ver <a href="../LICENSE.md">LICENSE.md</a> para detalles.</p>
 
 
 
