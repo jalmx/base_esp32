@@ -6,3 +6,4 @@ _*
 venv
 tmp
 .history
+.xdp-*
